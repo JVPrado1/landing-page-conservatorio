@@ -2,231 +2,239 @@
     font-size: 16px;
 }
   
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-  
-  .curso,
-  .professor,
-  .cursos__titulo,
-  .cursos__descricao,
-  .professores__titulo,
-  .professores__descricao,
-  .hero__titulo,
-  .hero__subtitulo,
-  .hero__botao,
-  .hero__75anos-imagem,
-  .cursos__imagem {
-      transition: all 1.2s ease;
-      opacity: 0;
-      transform: scale(0.8);
-  }
+.curso,
+.professor,
+.cursos__titulo,
+.cursos__descricao,
+.professores__titulo,
+.professores__descricao,
+.hero__titulo,
+.hero__subtitulo,
+.hero__botao,
+.hero__75anos-imagem,
+.cursos__imagem {
+    transition: all 1.2s ease;
+    opacity: 0;
+    transform: scale(0.8);
+}
 
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  html {
-      min-height: 100vh;
-  }
+html {
+    min-height: 100vh;
+}
 
-  body {
-      
-      margin: 0 auto;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-  }
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-  .cabecalho{
-      display: flex;
-      flex-grow: 1;
-      top: 0;
-      align-items: center;
-      padding-left: 30px;
-      gap: 60px;
-      height: 10vh;
-      background-color: #fff;
-      position: sticky;
-      z-index: 100;
-  }
+.cabecalho {
+    display: flex;
+    flex-grow: 1;
+    top: 0;
+    align-items: center;
+    padding-left: 30px;
+    gap: 60px;
+    height: 10vh;
+    background-color: #fff;
+    position: sticky;
+    z-index: 100;
+}
 
-  .cabecalho__container{
+.cabecalho__container {
     display: flex;
     align-items: center;
     gap: 90px;
     margin-left: 130px;
-  }
+}
 
-  .cabecalho__menu {
-      display: flex;
-      gap: 60px;
-      text-decoration: none;
-      list-style: none;
-      
-      
-  }
+.cabecalho__menu {
+    display: flex;
+    gap: 60px;
+    text-decoration: none;
+    list-style: none;
+}
 
-  .cabecalho__menu a{
-      text-decoration: none;
-      color: black;
-      font-size: 1.2rem;
-      font-weight: 530;
-      transition: all 0.3s ease;
-      display: inline-block;
-      font-family: 'Noto Sans';
-      
-      
-      
-  }
+.cabecalho__menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 530;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-family: 'Noto Sans';
+}
 
-  .cabecalho__menu a:hover{
+.cabecalho__menu a:hover {
     text-decoration: none;
     color: #e08413;
     transform: scale(1.1);
-
 }
-    
 
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 85vh;
+    scroll-margin-top: 10vh;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
-  .hero-section {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 80vh;
-      scroll-margin-top: 10vh;
-    
-  }
+.hero__conteudo {
+    max-width: 700px;
+    animation: fadeIn 1.2s ease-in;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 32px;
+    padding: 60px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translateZ(0);
+}
 
-  .hero__conteudo {
-      max-width: 600px;
-      animation: fadeIn 1s ease-in;
-  }
+.hero__titulo {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #062853;
+    margin-bottom: 24px;
+    font-family: 'Noto Sans';
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 
-  .hero__titulo {
-      font-size: 4rem;
-      font-weight: bold;
-      color: black;
-      margin-bottom: 24px;
-      font-family: 'Noto Sans';
-      font-weight: 800;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  }
+.hero__subtitulo {
+    font-size: 1.5rem;
+    color: #e08413;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
 
-  .hero__subtitulo {
-      font-size: 1.5rem;
-      color: #e08413;
-      line-height: 1.6;
-      margin-bottom: 32px;
-      font-family: 'Noto Sans';
-      font-weight: 400;
-  }
+.hero__botoes {
+    display: flex;
+}
 
-  .hero__botao {
-      padding: 16px 32px;
-      background: #4287f5;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin-right: 16px;
-  }
+.hero__botao {
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #4287f5, #1a4c8e);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-  .hero__botao:hover {
-      background: #1a4c8e;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  }
+.hero__botao:hover {
+    background: linear-gradient(135deg, #1a4c8e, #062853);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(26, 76, 142, 0.3);
+}
 
-  @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-  }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-  .hero__75anos-imagem {
-      width: 300px;
-      height: auto;
-      filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
-      animation: float 3s ease-in-out infinite;
-  }
+.hero__75anos-imagem {
+    width: 350px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+    animation: float 3s ease-in-out infinite;
+}
 
-  @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-  }
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
 
-  .cursos-section {
-
+.cursos-section {
     background: linear-gradient(135deg, #fff5e6, #ffecd1, #ffe4bc);
     scroll-margin-top: 10vh;
-    height: 80vh;
-      display: flex;
-  }
+    min-height: 90vh;
+    display: flex;
+}
 
+.cursos__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 150px;
+}
 
+.cursos__container__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-  .cursos__container {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: center;
-      gap: 100px;
-  }
+.cursos__titulo {
+    max-width: 200px;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-family: 'Noto Sans';
+}
 
-  .cursos__container__textos {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-  }
+.cursos__descricao {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #666;
+    font-weight: 500;
+    font-family: 'Noto Sans';
+    max-width: 600px;
+}
 
-  .cursos__titulo {
-      font-size: 2.5rem;
-      color: #333;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 800;
-      font-family: 'Noto Sans';
-  }
+.cursos__vitrine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
-  .cursos__descricao {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #666;
-      font-weight: 400;
-      font-family: 'Noto Sans';
-      max-width: 400px;
-  }
+.curso {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #f7931a, #f1b440);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
 
-  .cursos__vitrine {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-  }
-
-  .curso {
-      display: flex;
-      width: 250px;
-      height: 100px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      background: linear-gradient(45deg, #f7931a, #f1b440);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .curso:hover {
+.curso:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 20px rgba(0,0,0,0.2);
 }
 
-  .curso span {
+.curso span {
     color: white;
     font-family: 'Noto Sans';
     font-size: 1.2rem;
@@ -244,24 +252,16 @@
     font-weight: bold;
 }
 
-  .cursos__imagem{
-      rotate: -50deg;
-  }
-
-  .curso__imagem {
-    width: 500px;
-    height: auto;
-    position: absolute;
-    transform: translateX(70%);
-    transition: transform 0.6s ease;
+.cursos__imagem {
+    rotate: -50deg;
+    align-self: center;
 }
 
 .curso:hover .curso__imagem {
     transform: translateX(0);
-    
 }
 
-  .professores-section{
+.professores-section {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -270,96 +270,97 @@
     padding: 12vh 70px 12vh 70px;
     min-height: 100vh; 
     background-color: white;
-  }
+}
 
-  .professores__container{
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 70px;
-  }
+.professores__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+}
 
-  .professores__container__textos{
-      display: flex;
-      flex-direction: column;
-      max-width: 800px;
-      text-align: center;
-      gap: 21px;
-  }
+.professores__container__textos {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    text-align: center;
+    justify-content: center;
+    gap: 21px;
+}
 
-  .professores__vitrine{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px;
-      text-align: center;
-      max-width: 1200px;
-      margin: 0 auto;
-  }
+.professores__vitrine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  .professor:nth-last-child(2) {
-      grid-column: 2;
-  }
+.professor:nth-last-child(2) {
+    grid-column: 2;
+}
 
-  .professor{
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-  }
+.professor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-  .professor__imagem{
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-  }
+.professor__imagem {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
 
-  .professor__imagem:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
-  }
+.professor__imagem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
 
-  .professores__titulo {
-      font-size: 2.5rem;
-      color: #333;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      position: relative;
-      font-weight: 800;
-      font-family: 'Noto Sans';
-  }
+.professores__titulo {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    font-weight: 800;
+    font-family: 'Noto Sans';
+}
 
-  .professores__titulo::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 150px;
-      height: 4px;
-      background: orange;
-      border-radius: 2px;
-  }
+.professores__titulo::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: orange;
+    border-radius: 2px;
+}
 
-  .professores__descricao {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: #666;
-      max-width: 600px;
-      margin-top: 24px;
-      text-align: center;
-      font-weight: 400;
-      font-family: 'Noto Sans';
-  }
+.professores__descricao {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 600px;
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Noto Sans';
+}
 
-  .teste {  
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f8f9fa;
-  }
+.teste {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
