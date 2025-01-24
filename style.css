@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px;
+}
+  
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
   
@@ -51,13 +55,13 @@
   .cabecalho__container{
     display: flex;
     align-items: center;
-    gap: 70px;
-    margin-left: 100px;
+    gap: 90px;
+    margin-left: 130px;
   }
 
   .cabecalho__menu {
       display: flex;
-      gap: 32px;
+      gap: 60px;
       text-decoration: none;
       list-style: none;
       
@@ -67,7 +71,8 @@
   .cabecalho__menu a{
       text-decoration: none;
       color: black;
-      font-size: 20px;
+      font-size: 1.2rem;
+      font-weight: 530;
       transition: all 0.3s ease;
       display: inline-block;
       font-family: 'Noto Sans';
